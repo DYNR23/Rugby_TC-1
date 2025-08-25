@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rugby Club Manager - Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Left Section: Image with Welcome Text -->
+    <div class="left-section">
+      <!-- Replace "player.jpg" with your own image -->
+      <img src="./img/imagenlogin.jpg" alt="Rugby player">
+      <div class="welcome-text">
+        <h1>HELLO!</h1>
+        <p>WELCOME</p>
+      </div>
+    </div>
+
+    <!-- Right Section: Login Form -->
+    <div class="right-section">
+      <div class="login-box">
+        <!-- Replace "logo.png" with your own logo -->
+        <img src="logo.png" alt="Rugby Social Logo" class="logo">
+
+      <!-- Title -->
+      <h2 class="register-title">Register New User</h2>
+
+      <!-- Registration Form -->
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="John Doe" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="example@email.com" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••" required />
+
+        <label for="role">Role</label>
+        <select id="role" required>
+          <option value="admin">Admin</option>
+          <option value="coach">Coach</option>
+          <option value="player">Player</option>
+        </select>
+
+        <button type="submit" class="btn">Register</button>
+      </form>
+
+      <!-- Link back to login -->
+      <p class="back-link">
+        Already have an account? <a href="login.html">Login here</a>
+      </p>
+    </div>
+    <script src="js/crud.js"></script>
+  </body>
+</html>
